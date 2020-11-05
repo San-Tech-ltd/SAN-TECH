@@ -13,6 +13,9 @@
 
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
 	document.createElement('header');
 	document.createElement('footer');
@@ -23,6 +26,24 @@
 	document.createElement('article');
 	document.createElement('nav');
 </script> 
+<script>
+    function showResult(str) {
+      if (str.length==0) {
+        document.getElementById("livesearch").innerHTML="";
+        document.getElementById("livesearch").style.border="0px";
+        return;
+      }
+      var xmlhttp=new XMLHttpRequest();
+      xmlhttp.onreadystatechange=function() {
+        if (this.readyState==4 && this.status==200) {
+          document.getElementById("livesearch").innerHTML=this.responseText;
+          document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+        }
+      }
+      xmlhttp.open("GET","livesearch.php?q="+str,true);
+      xmlhttp.send();
+    }
+    </script>
 <script type="text/javascript">
 			var winW = 0, winH = 0;
 
@@ -187,7 +208,8 @@ $(document).ready(function(e) {
         <div class="search" style="margin-left: 300px; margin-right: 200px;">
             
             <form class="searchform cf">
-                <input type="text" placeholder="search">
+                <input type="text" placeholder="search" size="30" onkeyup="showResult(this.value)">
+                <div id="livesearch"></div>
                 <button type="submit">Go</button>
               </form>
               
@@ -206,65 +228,176 @@ $(document).ready(function(e) {
                     	<li><a href="default.htm" class="active">Home</a></li>
                         <li><a href="#About">About Us</a>
                         </li>
-                        <li><a href="web-app-development.htm">Offering</a>
-                        	<ul class="roomPop othersPop" style="background:rgb(247, 243, 243);">
-                                <h2 style="color:#1bafe6; padding:0 0 0 20px;">Offering</h2>
+                        <li><a href="">Offering</a>
+                        	<ul class="roomPop othersPop" style="background:rgb(247, 243, 243);margin-left:100px;width: 100px;height: 10px;float: center;">
+                                <div id="modal-container">
+                                    <div class="modal-background" style="width: fit-content;width: 100px;">
+                                      <div class="modal" style="color: red;">
+                                        <p><B style="color: #3266a8;">SAN Tech Ltd is a computer professional based company that solve different computer issues including :</B></p>
+                                        <li style="background:none;">
+                                            <ul>
+                                                <a href="web-app-development.htm" class="linktext"> Web App Development </a>
+                                                <a href="software-app-development.htm" class="linktext"> Software Development</a>
+                                            </ul>
+                                        </li>
                                 
-                                    <li style="background:none;">
-                                        <ul>
-                                            <a href="web-app-development.htm" class="linktext"> Web App Development </a>
-                                            <a href="software-app-development.htm" class="linktext"> Software Development</a>
-                                        </ul>
-                                    </li>
-                            
-                            
-                                    <li style="background:none;">
-                                    
-                                        <ul>
-                                            <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
-                                            <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
-                                        </ul>
-                                    </li>
-                            
-                                    <li style="background:none;">
-                                        <ul>
-                                            <a href="http://arokiait.com/landing/seo/seo-services.aspx" target="_blank" class="linktext"> Digital Marketing</a>
-                                        </ul>                                    
-                                    </li>
+                                
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+                                
+                                        <li style="background:none;">
+                                            <ul>
+                                                <a href="http://arokiait.com/landing/seo/seo-services.aspx" target="_blank" class="linktext"> Digital Marketing</a>
+                                            </ul>                                    
+                                        </li>
+                                        <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                                                                  <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                                                              </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 
+                                    <div class="buttons">
+                                     
+                                      <div id="seven" class="button" style="color: red;"><button type="button" class="btn btn-primary btn-lg">Potential Service</button></div>
+                                   
+                                  </div>
                             </ul>
                         </li>
                         <li><a href="optical-industry.htm">Industry verticals</a>
-                        	<ul class="roomPop othersPop" style=" height:185px;background: rgb(243, 239, 239);">
-                                <h2 style="color:#1bafe6; padding:0 0 0 20px;"  >Industry Verticals</h2>
+                        	<ul class="roomPop othersPop" style="background:rgb(247, 243, 243);margin-left:200px;width: 100px;height: 10px;float: center;">
+                                <div id="modal-container">
+                                    <div class="modal-background" style="width: fit-content;width: 100px;">
+                                      <div class="modal" style="color: red;">
+                                        <p><B style="color: #3266a8;">SAN Tech Ltd is a computer professional based company that solve different computer issues including :</B></p>
+                                        <li style="background:none;">
+                                            <ul>
+                                                <a href="web-app-development.htm" class="linktext"> Web App Development </a>
+                                                <a href="software-app-development.htm" class="linktext"> Software Development</a>
+                                            </ul>
+                                        </li>
                                 
-                                    <li style="background:none;">
-                                        <ul>
-                                            <a href="optical-industry.htm" class="linktext"> Optical Industry</a>
-                                            <a href="medical-equipment.htm" class="linktext"> Medical Equipment</a>
-                                            <a href="food-processing.htm" class="linktext"> Food Processing</a>
-                                            <a href="apparels-industry.htm" class="linktext"> Apparels</a>
-                                            <a href="manufacturing-industry.htm" class="linktext"> Manufacturing</a>
-                                        </ul>
-                                    </li>
-                            
-                            
-                                    <li style="background:none;">
-                                    
-                                        <ul>
-                                            <a href="non-profit-organization.htm" class="linktext"> Non-Profit Organization</a>
-                                            <a href="healthcare-industry.htm" class="linktext"> Healthcare</a>
-                                            <a href="printing-publication.htm" class="linktext"> Printing & Publication</a>
-                                            <a href="education.htm" class="linktext"> Education</a>
-                                            <a href="hotel-resorts.htm" class="linktext"> Hotels & Resorts</a>
-                                        </ul>
-                                    </li>
-                            
-                                    <li style="background:none;">
-                                        <ul>
-                                            <a href="skincare-cosmetic.htm" class="linktext"> Skincare & Cosmetics</a>
-                                            <a href="jewelry.htm" class="linktext"> Jewelry</a>
-                                        </ul>                                    
-                                    </li>
+                                
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+                                        <li style="background:none;">
+                                        
+                                            <ul>
+                                                <a href="offshore-development.htm" class="linktext"> Offshore Development</a>
+                                                <a href="mobile-app-development.htm" class="linktext"> Mobile App Development</a>
+                                            </ul>
+                                        </li>
+                                
+                                        <li style="background:none;">
+                                            <ul>
+                                                <a href="http://arokiait.com/landing/seo/seo-services.aspx" target="_blank" class="linktext"> Digital Marketing</a>
+                                            </ul>                                    
+                                        </li>
+                                        <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                                                                  <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                                                              </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 
+                                    <div class="buttons">
+                                     
+                                      <div id="seven" class="button" style="color: red;"><button> projects</button></div>
+                                   
+                                  </div>
                             </ul>
                         </li>
                         <li><a href="#">Solutions</a>
@@ -1097,7 +1230,18 @@ var sc_invisible=1;
 var sc_security="4e720109";
 
 </script>
+<script>
+    $('.button').click(function(){
+  var buttonId = $(this).attr('id');
+  $('#modal-container').removeAttr('class').addClass(buttonId);
+  $('body').addClass('modal-active');
+})
 
+$('#modal-container').click(function(){
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
+});
+</script>
 <script type="text/javascript"
 
 src="http://www.statcounter.com/counter/counter.js"></script>
