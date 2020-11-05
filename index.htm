@@ -175,60 +175,36 @@ $(document).ready(function(e) {
 
 
 <div id="main-container" class=" hidden-sm hidden-xs">
-	<div id="header">
+    <header style="width:100%; background: #006699;padding: 5px;"> &nbsp;&nbsp; Vision <div style="float: right;margin-right: 5px;"> Values</div>
+    </header>
+    <div class="wrap" style="background: white;color: #000000;">
+        <br><br>
+        <div style="float: right;margin-right: 20px;"><img src="images/twitter.png">&nbsp;<img src="images/facebook.png"><br>call:+250780131021</div>
+
+        <div itemscope itemtype="http://schema.org/Organization">
+           &nbsp; <a title="" href=""><img itemprop="logo" src="images/arokia-it.png" class="img-responsive" alt="" style="margin-top: 10px;"></a>
+         </div>
+        <div class="search" style="margin-left: 300px; margin-right: 200px;">
+            
+            <form class="searchform cf">
+                <input type="text" placeholder="search">
+                <button type="submit">Go</button>
+              </form>
+              
+              <!-- <p style="color: red;">Dribbble Rebound of <a target="_blank" href="http://dribbble.com/shots/843289-Search-Bar?list=tags&tag=ui">Search Bar</a> by <a target="_blank" href="http://dribbble.com/craftyliang">Liang Shi</a></p> -->
+               
+        </div>
+     </div>
+
+     <!-- navbar -->
+
+	<div id="header" style="height: 50px;">
     	<div class="set-width">
-        	<div class="left f-left"> 
-			<!--Start of logo schema--> 
-			<div itemscope itemtype="http://schema.org/Organization">
-           	<a title="" href=""><img itemprop="logo" src="images/arokia-it.png" class="img-responsive" alt=""></a>
-			</div>
-			<!--End of logo schema-->
-            </div>
             <div class="f-right right main">
-          		<div class="top">
-                	<ul class="contensed">
-                    	<li><a href="Careers.htm" class="career">Career</a></li>
-                    	<li><a href="https://santechrwanda.com/about.php" target="_blank" class="blog">Blog</a></li>
-                        <li><a href="enquiry.aspx" class="sales">Sales</a></li>
-                        <li><a href="#" class="support">&nbsp;&nbsp;&nbsp;Support</a>
-                        	<ul>
-                            	<li><a href="https://santechrwanda.com/about.php" target="_blank">Ticket Status</a></li>
-                                <li><a href="https://santechrwanda.com/about.php" target="_blank">New Ticket</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                	<div class="clear"></div>
-                </div>  
                 <nav>
                 	<ul class="contensed">
                     	<li><a href="default.htm" class="active">Home</a></li>
-                        <li><a href="about-us.htm" >About Us</a>
-                        	<ul class="roomPop othersPop" style="background: rgb(241, 241, 240);">
-                                <h2 style="color:#1bafe6; padding:0 0 0 20px;">About Us</h2>
-                                
-                                    <li style="background:none;">
-                                        <ul>
-                                            <a href="our-team.htm" class="linktext"> Our Team </a>
-                                            <a href="technical-alliance.htm" class="linktext"> Technical Alliance</a>
-                                        </ul>
-                                    </li>
-                            
-                            
-                                    <li style="background:none;">
-                                    
-                                        <ul>
-                                            <a href="business-alliance.htm" class="linktext"> Business Alliance</a>
-                                            <a href="infrastructure.htm" class="linktext"> Infrastructure</a>
-                                        </ul>
-                                    </li>
-                            
-                                    <li style="background:none;">
-                                        <ul>
-                                            <a href="https://santechrwanda.com/about.php" target="_blank" class="linktext"> Events&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                            <a href="contact-us.htm" class="linktext"> Contact Us</a>
-                                        </ul>                                    
-                                    </li>
-                            </ul>
+                        <li><a href="#About">About Us</a>
                         </li>
                         <li><a href="web-app-development.htm">Offering</a>
                         	<ul class="roomPop othersPop" style="background:rgb(247, 243, 243);">
@@ -334,6 +310,10 @@ $(document).ready(function(e) {
                     </ul>
                 </nav>	
             </div>
+            <br>
+
+            <!-- End of navbar -->
+
  	<div class="container" style="display:none;">
        <div class="header menu-out"><a title="" href=""><img class="exp-icon" alt="" src="images/mobil-menu.png" /></a></div>
          <div class="content">
@@ -412,7 +392,8 @@ $(document).ready(function(e) {
  </div>
         	<div class="clear"></div>
         </div>
-    </div><!--header-->
+    </div>
+    
     <div id="section" class="tab-wrap" style="background:  #005580;">
     	<div class="set-width">
         	<div class="tab-title-block">
@@ -431,7 +412,7 @@ $(document).ready(function(e) {
             <div class="tab-content-block white" style="background:  #005580;">
             	
                 <div class="panel-1" style="background:  #10597e;">
-                	<div class="left" style="background:  #236180;">
+                	<div class="left" style="background:  #236180;" id="About">
                     	<p >SAN TECH LTD is a private company created and based in Kigali, Rwanda by young Rwandan Software Engineers to contribute to the national and regional IT sector, driving the technology evolution towards a next level in Rwanda and abroad
                             Our core concept is based into “Makes ideas Happen” for effectiveness and efficiency services and we are consistently inspired by Time Management by using smart technology in security.
                     	</p>
@@ -1404,5 +1385,4 @@ $(function () {
 });   
   })
   </script>
- 
 </html>
