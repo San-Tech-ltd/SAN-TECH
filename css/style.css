@@ -22,8 +22,6 @@
 #main-container{width:100%;  position:relative; z-index:99;}
 
 
-
-
 /*---------Header starts----------*/
 #header{width:100%; float:left; background:url(../images/header-bg.png) left top repeat-x; height:76px;}
 #header .left{padding:0px 0 0;}
