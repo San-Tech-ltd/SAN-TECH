@@ -4,11 +4,11 @@
 .banner{width:100%; position:absolute; height:814px; background:url(../images/slide1.jpg) center top no-repeat #000; z-index:1;}
 .banner{width:100%; float:left;}
 .banner .slide{float:left; width:100%; background:url(../images/preloader.gif) center 290px no-repeat #111316;}
-.banner .slide .slide-inner{min-width:100%; float:left; background-position:center top; height:814px; background-repeat:no-repeat;}
-.banner .slide .slide-inner.sl1{background-image:url(../images/banner-loyalty.jpg);}
+.banner .slide .slide-inner{min-width:100%; float:left; background-position:center top; height:814px; background-repeat:no-repeat;margin-top: 150px;}
+.banner .slide .slide-inner.sl1{background-image:url(../images/banner-loyalty.jpg); }
 .banner .slide .slide-inner.sl2{background-image:url(../images/banner-teamhr.jpg);}
 .banner .slide .slide-inner.sl3{background-image:url(../images/banner-crm.jpg);}
-.controllers{width:100%; float:left; position:absolute; margin:500px 0 0; height:14px; background:url(../images/slide-controller-dotted-bg.png) center 7px no-repeat; text-align:center; z-index:9999999999; padding-left:0 !important;}
+.controllers{width:100%; float:left; position:absolute; margin:500px 0 0; height:14px; background:url(../images/slide-controller-dotted-bg.png) center 7px no-repeat; text-align:center; z-index:9999999999; padding-left:0 !important;margin-top: 620px;}
 .controllers a{display:inline-block; width:15px; height:15px; background:url(../images/coltroller.png) left top no-repeat; text-indent:-9999px; margin:0 7px; 
 -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; -o-transition: all .5s ease-in-out; transition: all .5s ease-in-out;}
 .controllers a.activeSlide, .controllers a:hover{background-position:left bottom;}
