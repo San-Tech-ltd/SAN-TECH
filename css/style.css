@@ -424,7 +424,7 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
 	 height:.6em;
 	 background:#929394;
 	 position:absolute;
-	 top:50%; left:50%;
+	 top:50%; left:100%;
 	 margin:-.4em 0 0 -.1em;
    }
    #watch .minute-marks li:first-child {transform:rotate(6deg) translateY(-12.7em)}
@@ -480,7 +480,7 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
 	 height:30em;
 	 border-radius:15em;
 	 position:absolute;
-	 top:0; left:2%;
+	 top:0; left:90%;
 	 margin-left:-20em;
    }
    #watch .digits li {
@@ -533,11 +533,11 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
    @keyframes hours { to {transform:rotate(335deg)} }
    #watch .hours-hand {
 	 width:.8em;
-	 height:7em;
+	 height:4em;
 	 border-radius:0 0 .9em .9em;
 	 background:#232425;
 	 position:absolute;
-	 bottom:50%; left:50%;
+	 bottom:50%; left:145%;
 	 margin:0 0 -.8em -.4em;
 	 box-shadow:#232425 0 0 2px;
 	 transform-origin:0.4em 6.2em;
@@ -567,11 +567,11 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
    @keyframes minutes { to {transform:rotate(422deg)} }
    #watch .minutes-hand {
 	 width:.8em;
-	 height:12.5em;
+	 height:9.5em;
 	 border-radius:.5em;
 	 background:#343536;
 	 position:absolute;
-	 bottom:50%; left:50%;
+	 bottom:45%; left:50%;
 	 margin:0 0 -1.5em -.4em;
 	 box-shadow:#343536 0 0 2px;
 	 transform-origin:0.4em 11em;
@@ -585,7 +585,7 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
 	 border-radius:.1em .1em 0 0/10em 10em 0 0;
 	 background:#c00;
 	 position:absolute;
-	 bottom:50%; left:50%;
+	 bottom:50%; left:135%;
 	 margin:0 0 -2em -.1em;
 	 box-shadow:rgba(0,0,0,.8) 0 0 .2em;
 	 transform-origin:0.1em 12em;
@@ -599,7 +599,7 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
 	 border-radius:.7em;
 	 background:inherit;
 	 position:absolute;
-	 left:-.65em; bottom:1.35em;
+	 left:-.150em; bottom:1.35em;
    }
    #watch .seconds-hand:before {
 	 content:'';
@@ -609,7 +609,7 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
 	 box-shadow:rgba(0,0,0,.8) 0 0 .2em;
 	 background:inherit;
 	 position:absolute;
-	 left:-.35em; bottom:-3em;
+	 left:-.150em; bottom:-3em;
    }
    #watch .digital-wrap {
 	 width:9em;
@@ -617,7 +617,7 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
 	 border:.1em solid #222;
 	 border-radius:.2em;
 	 position:absolute;
-	 top:50%; left:50%;
+	 top:50%; left:100%;
 	 margin:3em 0 0 -4.5em;
 	 overflow:hidden;
 	 background:#4c4c4c;
@@ -642,7 +642,7 @@ header .right nav ul.roomPop li {float: left;	color: #4f4f4f;padding-right: 2px;
 	 letter-spacing:2px;
 	 text-align:center;
 	 position:relative;
-	 left:1px;
+	 left:100px;
    }
    #watch .digit-minutes li {
 	 animation:dsm 3600s steps(60, end) 0s infinite;
